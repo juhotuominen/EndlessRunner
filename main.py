@@ -11,7 +11,7 @@ height = 600
 display = pygame.display.set_mode((width, height))
 pygame.display.set_caption("EndlessRunner")
 
-player_img = pygame.image.load("guy.png")
+player_img = pygame.image.load("images/guy.png")
 
 red = (255, 0, 0)
 
