@@ -14,6 +14,8 @@ pygame.display.set_caption("EndlessRunner")
 player_img = pygame.image.load("images/guy.png")
 
 red = (255, 0, 0)
+green = (0, 255, 0)
+blue = (0, 0, 255)
 
 font_style = pygame.font.SysFont("Arial", 25)
 
@@ -25,7 +27,6 @@ def message(msg, color, mx, my):
 
 def game_loop():
     running = True
-
 
     isJump = False
     y_gravity = 1
@@ -63,7 +64,7 @@ def game_loop():
                 y_velocity = jump_height
 
         display.fill((0,0,0))
-        message("Press Q to quit!", red, 10, 10)
+        message("Press Q to quit!", blue, 10, 10)
         display.blit(player_img, (x, y))
         pygame.display.update()
         clock.tick(60)
